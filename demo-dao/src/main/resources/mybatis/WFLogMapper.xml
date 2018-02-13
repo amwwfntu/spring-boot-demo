@@ -16,7 +16,7 @@
     </select>
 
     <insert id="save" parameterType="com.taironglc.demo.dao.model.WhFinLog">
-        insert into wf_log(id,server_ip)values(#{id},#{serverIp})
+        insert into wf_log(id)values(#{id})
     </insert>
 
 </mapper>

@@ -27,14 +27,14 @@ public class MyBatisConfig {
     @Bean
     public DataSource dataSource() {
          DruidDataSource dataSource = new DruidDataSource();
-        /*dataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
+        dataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
         dataSource.setUrl("jdbc:oracle:thin:@11.6.23.201:1521:p2pdb");
         dataSource.setUsername("tlcd");
-        dataSource.setPassword("tlcd");*/
-        dataSource.setDriverClassName(driverClass);
+        dataSource.setPassword("tlcd");
+        /*dataSource.setDriverClassName(driverClass);
         dataSource.setUrl(url);
         dataSource.setUsername(userName);
-        dataSource.setPassword(password);
+        dataSource.setPassword(password);*/
         return dataSource;
     }
     @Bean
